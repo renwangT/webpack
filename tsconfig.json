@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false, // 允许编译js文件
+    "skipLibCheck": true, // 路过所有声明文件的类型检查
+    "esModuleInterop": true, // 禁用命名空间引用（import * as fs from "fs"） 启用 CJS/AMD/UMD 风格引用（import fs from "fs"）
+    "allowSyntheticDefaultImports": true, // 允许从没有默认到处的模块进行默认导出
+    "strict": true, // 启用所有严格模式类型检查
+    "forceConsistentCasingInFileNames": true, // 不允许对用一个文件使用不一至格式的引用
+    "module": "CommonJs", // 指定模块代码生成
+    "moduleResolution": "Node", // 用于选择模块解析策略，有"node"和"classic"两种类型
+    "resolveJsonModule": true, // 允许使用 .json 扩展名导入的模块
+    "isolatedModules": true, // 指定是否将每个文件作为单独的模块，默认为true，不可以和declaration同时设定
+    "noEmit": true, // 不生成编译文件
+    "jsx": "preserve", // 在 .tsx 文件中支持JSX
+    "sourceMap": true, // 生成相应的 .map文件
+    "declaration": true, // 用来指定是否在编译的时候生成相的d.ts声明文件，如果设为true,编译每个ts文件之后会生成一个js文件和一个声明文件，但是declaration和allowJs不能同时设为true
+    "noUnusedLocals": true, // 用于检查是否有定义了但是没有使用变量
+    "noUnusedParameters": true, // 用于检测是否在函数中没有使用的参数
+    "experimentalDecorators": true, //是否启用实验性的装饰器特性
+    "incremental": true, // 通过
+    "noFallthroughCasesInSwitch": true, // 用于检查switch中是否有case没有使用break跳出switch
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build", "server", "mock", "api", "dist", "public"]
+}

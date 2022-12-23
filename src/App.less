@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+body,
+html {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100vw;
+}
+#root {
+  height: 100%;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:disabled {
+  user-select: none;
+}
+input::placeholder {
+  color: #d2d2d2;
+  font-weight: 500;
+}
+*::-webkit-scrollbar {
+  height: 3px;
+  width: 3px;
+  overflow-y: auto;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #939392;
+}
+*::-webkit-scrollbar-track {
+  box-shadow: 0;
+  border-radius: 0;
+  background: #f0f2f5;
+}
+
+.zby-notification-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  // background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}

@@ -1,0 +1,7 @@
+{
+  "prettier.arrowParens": "avoid",
+  "prettier.jsxSingleQuote": false,
+  "prettier.trailingComma": "none",
+  "prettier.singleQuote": false,
+  "stylelint.packageManager": "yarn"
+}
